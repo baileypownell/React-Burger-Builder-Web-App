@@ -3,16 +3,18 @@ import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import './ContactData.css';
 import axios from '../../../axios-orders';
+import Input from '../../../components/UI/Input/Input';
 
 class ContactData extends React.Component {
 
   state = {
-    name: '',
-    email: '',
-    address: {
-      street: '',
-      state: '',
-      zipcode: ''
+    orderForm: {
+        name: 'Dwight',
+        street: 'Beet Road',
+        state: 'Pennsylvania',
+        country: 'United States'
+        email: 'schrutefarms@schrutefarms.com',
+        deliveryMethod: 'fastest'
     },
     loading: false
   }
@@ -22,16 +24,7 @@ class ContactData extends React.Component {
     this.setState({loading: true});
     const order = {
       ingredients: this.props.ingredients,
-      price: this.props.price,
-      customer: {
-        name: 'Dwight',
-        address: {
-          street: 'Beet Road',
-          state: 'Pennsylvania',
-          country: 'United States'
-        },
-        email: 'schrutefarms@schrutefarms.com'
-      }
+      price: this.props.price
     }
     axios.post('/orders.json', order).
     then(response => {
@@ -46,9 +39,9 @@ class ContactData extends React.Component {
   render() {
     let form = (
       <form>
-        <input type="text" name="name" placeholder="John"></input>
-        <input type="email" name="email" ></input>
-        <input type="text" name="zipcode"></input>
+        <Input inputtype="input" type="text" name="name" placeholder="John"></Input>
+        <Input inputtype="input" type="email" name="email" ></Input>
+        <Input inputtype="input" type="text" name="zipcode"></Input>
         <Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>
       </form>
     );

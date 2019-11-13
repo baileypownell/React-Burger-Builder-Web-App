@@ -1,9 +1,19 @@
 .Order {
   width: 80%;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 3px #ccc;
-  padding: 10px;
-  margin: 10px auto;
+  border: 3px solid #703b09;
+  box-shadow: 3px 3px 45px #703b09;
+  padding: 25px;
+  margin: 20px auto;
   box-sizing: border-box;
+  border-radius: 30px;
+}
 
+.Order span {
+  display: inline-block;
+  background-color: #40a4c8;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: white;
+  font-weight: bold;
 }

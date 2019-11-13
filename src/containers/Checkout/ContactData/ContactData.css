@@ -3,13 +3,11 @@
   width: 80%;
   text-align: center;
   border: 1ps solid #eee;
-  box-shadow: 5px 10px 30px #ccc;
+  box-shadow: 5px 5px 40px #703b09;
   padding: 15px;
+  border-radius: 30px;
 }
 
-.ContactData input {
-  display: block;
-}
 
 @media (min-width: 600px) {
   .ContactData {
