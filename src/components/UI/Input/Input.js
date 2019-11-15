@@ -4,6 +4,7 @@ import './Input.css';
 const Input = (props) => {
   let inputElement;
 
+
   switch (props.elementType) {
     case ('input'):
       inputElement = <input
