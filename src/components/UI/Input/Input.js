@@ -4,7 +4,7 @@ import './Input.css';
 const Input = (props) => {
   let inputElement;
 
-
+  // eslint-disable-next-line
   switch (props.elementType) {
     case ('input'):
       inputElement = <input
