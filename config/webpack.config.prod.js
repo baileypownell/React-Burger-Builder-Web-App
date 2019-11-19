@@ -169,7 +169,7 @@ module.exports = {
             test: /\.css$/,
             use: [
               'style-loader',
-              'css-loader'
+              'css-loader']
               // require.resolve('style-loader'),
               //{
                 // loader: require.resolve('css-loader'),
