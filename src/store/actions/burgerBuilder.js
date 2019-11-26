@@ -26,9 +26,9 @@ export const initIngredients = () => {
   return dispatch => {
     axios.get('https://burger-builder-ac02b.firebaseio.com/orders')
     .then( response => {
-      this.setState({ ingredients: response.data});
+      dispatch(setIngredients(response.data));
     }).catch( error => {
-      this.setState({ error: true });
+
     });
   };
 }

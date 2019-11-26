@@ -6,14 +6,12 @@ import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import WithErrorHandler from '../../hoc/WithErrorHandler/WithErrorHandler';
-import axios from '../../axios-orders';
 import * as burgerBuilderActions from '../../store/actions/index';
 
 class BurgerBuilder extends Component {
 
   state = {
-    purchasing: false,
-    loading: false
+    purchasing: false
   }
 
   // use arrow functions so we have access to the 'this' keyword
@@ -48,9 +46,6 @@ class BurgerBuilder extends Component {
       price={this.props.price}
       purchaseCanceled={this.purchaseCancelHandler}
       purchaseContinued={this.purchaseContinueHandler}/>
-    if (this.state.loading) {
-      orderSummary = <Spinner/>;
-    }
     // jsx code
     return (
       <div>
