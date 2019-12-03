@@ -178,7 +178,6 @@ class ContactData extends React.Component {
         ))}
         <Button
           btnType="Success"
-          clicked={this.orderHandler}
           disabled={!this.state.formIsValid}>ORDER</Button>
       </form>
     );

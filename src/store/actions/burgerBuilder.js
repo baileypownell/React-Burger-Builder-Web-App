@@ -1,5 +1,4 @@
 import * as actionTypes from './actionTypes';
-import { updateObject } from '../utility.js';
 import axios from '../../axios-orders';
 
 export const addIngredient = (name) => {

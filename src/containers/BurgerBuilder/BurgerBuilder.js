@@ -35,36 +35,6 @@ class BurgerBuilder extends Component {
     this.props.history.push('/checkout');
   }
 
-  // render() {
-  //   const disabledInfo = {
-  //     ...this.props.ings
-  //   }
-  //   for (let key in disabledInfo) {
-  //     disabledInfo[key] = disabledInfo[key] <= 0;
-  //   }
-  //   let orderSummary = <OrderSummary
-  //     ingredients={this.props.ings}
-  //     price={this.props.price}
-  //     purchaseCanceled={this.purchaseCancelHandler}
-  //     purchaseContinued={this.purchaseContinueHandler}/>
-  //   // jsx code
-  //   return (
-  //     <div>
-  //       <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
-  //         {orderSummary}
-  //       </Modal>
-  //       <Burger ingredients={this.props.ings}/>
-  //       <BuildControls
-  //         ingredientAdded={this.props.onIngredientAdded}
-  //         ingredientRemoved={this.props.onIngredientRemoved}
-  //         disabled={disabledInfo}
-  //         price={this.props.price}
-  //         purchaseable = {this.updatePurchaseState(this.props.ings)}
-  //         ordered={this.purchaseHandler}
-  //       />
-  //     </div>
-  //   );
-  // }
   render () {
     const disabledInfo = {
         ...this.props.ings
