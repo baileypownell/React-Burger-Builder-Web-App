@@ -14,7 +14,8 @@ class Orders extends React.Component {
     loading: true
   }
   componentDidMount() {
-    axios.get('orders.json?auth=' + this.props.token).then(res => {
+    const queryParams = '?auth=' + this.props.token + '&orderBy="userId"&equalTo"' + this.props.userId + '"';
+    axios.get('orders.json?' + queryParams).then(res => {
       const fetchedOrders = [];
       for (let key in res.data) {
         fetchedOrders.push({
@@ -44,7 +45,8 @@ class Orders extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    token: state.auth.token
+    token: state.auth.token,
+    userId: state.auth.userId
   }
 }
 
