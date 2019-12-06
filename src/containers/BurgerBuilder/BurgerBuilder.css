@@ -1,0 +1,8 @@
+#burgerBuilderParent {
+  background-image: url("https://res.cloudinary.com/djad06sng/image/upload/v1575662753/dan-gold-E6HjQaB7UEA-unsplash.jpg");
+  height: 95vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}

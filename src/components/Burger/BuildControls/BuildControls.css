@@ -7,6 +7,10 @@
   box-shadow: 0 2px 2px #ccc;
   margin: auto;
   padding: 10px 0;
-  position: absolute;
+  position: sticky;
   bottom: 0;
+}
+
+.BuildControls h1 {
+  color: white;
 }

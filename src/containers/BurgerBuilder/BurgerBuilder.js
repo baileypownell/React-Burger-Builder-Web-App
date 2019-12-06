@@ -7,6 +7,7 @@ import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import WithErrorHandler from '../../hoc/WithErrorHandler/WithErrorHandler';
 import * as actions from '../../store/actions/index';
+import './BurgerBuilder.css';
 
 class BurgerBuilder extends Component {
 
@@ -52,7 +53,7 @@ class BurgerBuilder extends Component {
 
     if ( this.props.ings ) {
         burger = (
-            <div>
+            <div id="burgerBuilderParent">
                 <Burger ingredients={this.props.ings} />
                 <BuildControls
                     isAuth={this.props.isAuthenticated}

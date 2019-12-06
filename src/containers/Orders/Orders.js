@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import Order from '../../components/Order/Order';
 import axios from '../../axios-orders';
 import WithErrorHandler from '../../hoc/WithErrorHandler/WithErrorHandler';
-// import Spinner from '../../components/UI/Spinner/Spinner';
-// import * as actions from '../../store/actions/index';
+import './Orders.css';
 
 
 
@@ -31,7 +30,7 @@ class Orders extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="ordersParent">
         {this.state.orders.map(order => (
             <Order
               key={order.id}

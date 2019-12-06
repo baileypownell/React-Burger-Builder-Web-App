@@ -6,25 +6,36 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
+  background: rgba(92, 146, 16,0.5);
+  height: 100%;
+}
+
+.Burger h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 35px;
+  color: white;
 }
 
 @media (min-width: 500px) and (min-height: 400px){
   .Burger {
-    width: 350px;
+    /* width: 350px; */
     /* height: 300px; */
   }
 }
 
 @media (min-width: 500px) and (min-height: 401px){
   .Burger {
-    width: 450px;
-    height: 400px;
+    /* width: 450px;
+    height: 400px; */
   }
 }
 
 @media (min-width: 1000px) and (min-height: 700px){
   .Burger {
-    width: 700px;
-    height: 550px;
+    /* width: 700px;
+    height: 550px; */
+  }
+  .Burger h2 {
+    font-size: 45px;
   }
 }
