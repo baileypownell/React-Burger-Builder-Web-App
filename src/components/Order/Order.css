@@ -1,7 +1,7 @@
 .Order {
   width: 80%;
-  border: 3px solid #703b09;
-  box-shadow: 3px 3px 45px #703b09;
+  border: 3px solid rgba(250, 129, 0, 0.8);
+  box-shadow: 3px 3px 45px rgba(250, 129, 0, 0.4);
   padding: 25px;
   margin: 20px auto;
   box-sizing: border-box;
@@ -10,10 +10,21 @@
 
 .Order span {
   display: inline-block;
-  background-color: #40a4c8;
+  background-color: #5c9210;
   border-radius: 20px;
   padding: 10px;
-  margin: 0 5px;
+  margin: 0 5px 5px 0;
   color: white;
   font-weight: bold;
+}
+
+.Order p {
+  font-weight: bold;
+  color:rgb(250, 129, 0);
+}
+
+@media screen and (max-width: 264px) {
+  .Order {
+    text-align: center;
+  }
 }

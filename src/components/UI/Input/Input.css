@@ -10,7 +10,7 @@
 
 .InputElement {
   outline: none;
-  border: 2px solid #703b09;
+  border: 2px solid rgba(250, 129, 0, 0.8);
   background-color: white;
   font: inherit;
   padding: 6px 10px;
@@ -21,5 +21,5 @@
 
 .InputElement:focus {
   outline: none;
-  border-color: #40a4c8;
+  border-color: #5c9210;
 }

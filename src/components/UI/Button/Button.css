@@ -8,6 +8,7 @@
     padding: 10px;
     margin: 10px;
     font-weight: bold;
+    transition: all .4s;
 }
 
 /* .Button:first-of-type {
@@ -21,9 +22,28 @@
 }
 
 .Success {
-    color: #5C9210;
+    background-color: #5C9210;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.Success:hover {
+  background-color: #78bf13;
+}
+
+.Danger:hover {
+  background-color: rgb(250, 129, 0);
 }
 
 .Danger {
-    color: #944317;
+    background-color: rgba(250, 129, 0, 0.8);
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+@media screen and (min-width: 900px) {
+  .Button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 }

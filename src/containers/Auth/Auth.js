@@ -150,10 +150,10 @@ class Auth extends React.Component {
     return (
       <div className="Auth">
         {authRedirect}
-        <h1>Sign Up</h1>
+        <h1>{this.state.isSignup ? 'Sign Up' : 'Sign In'}</h1>
         <form onSubmit={this.submitHandler}>
           {form}
-          <Button btnType="Success">SUBMIT</Button>
+          <Button btnType="Success">{this.state.isSignup ? 'CREATE ACCOUNT' : 'LOG IN'}</Button>
         </form>
         <Button
           clicked={this.switchAuthModeHandler}

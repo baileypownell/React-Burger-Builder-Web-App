@@ -14,6 +14,8 @@
   border: 1px solid #AA6817;
   cursor: pointer;
   outline: none;
+  transition: all .4s;
+  border-radius: 15px;
 }
 
 .BuildControl button:disabled {
@@ -37,42 +39,43 @@
 }
 
 .BuildControl .Less {
-    background-color: #D39952;
+    background-color: #314d08;
     color: white;
 }
 
 .BuildControl .More {
-    background-color: #8F5E1E;
+    background-color: #5C9210;
     color: white;
 }
 
 .BuildControl .Less:hover, .BuildControl .Less:active {
-    background-color: #DAA972;
-    color: white;
+    background-color: white;
+    color: #314d08;
 }
 
 .BuildControl .More:hover,.BuildControl .More:active {
-    background-color: #99703F;
-    color: white;
+    background-color: white;
+    color: #5C9210;
 }
 
 
 .OrderButton {
-    background-color: #DAD735;
+    background-color: #5C9210;
     outline: none;
     cursor: pointer;
-    border: 1px solid #966909;
-    color: #966909;
+    border: 2px solid white;
+    color: white;
     font-family: inherit;
     font-size: 1.2em;
     padding: 15px 30px;
-    box-shadow: 2px 2px 2px #966909;
+    border-radius: 20px;
+    transition: all .4s;
+    margin-top: 15px;
 }
 
 .OrderButton:hover, .OrderButton:active {
-    background-color: #A0DB41;
-    border: 1px solid #966909;
-    color: #966909;
+    background-color: #78bf13;
+    border: 2px solid white;
 }
 
 .OrderButton:disabled {
@@ -96,4 +99,12 @@
     100% {
         transform: scale(1);
     }
+}
+
+@media screen and (min-width: 900px) {
+  .BuildControl button {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: auto;
+  }
 }
