@@ -9,7 +9,7 @@ import WithErrorHandler from '../../hoc/WithErrorHandler/WithErrorHandler';
 import * as actions from '../../store/actions/index';
 import './BurgerBuilder.css';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
 
   state = {
     purchasing: false
