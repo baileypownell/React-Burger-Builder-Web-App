@@ -31,7 +31,7 @@ const Input = (props) => {
   }
   return (
     <div className="Input">
-      <label className="Label">{props.label}</label>
+      <label className="Label" id={window.location.href.includes('contact-data') ? "green" : null}>{props.label}</label>
       {inputElement}
     </div>
   )

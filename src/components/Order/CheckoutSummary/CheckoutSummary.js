@@ -7,8 +7,8 @@ const CheckoutSummary = (props) => {
   return (
     <div className="CheckoutSummary">
       <h1>Enjoy!</h1>
-      <div style={{width: '100%', margin: 'auto'}}>
-        <Burger ingredients={props.ingredients}/>
+      <div style={{width: '100%', margin: 'auto', height: '40vh'}}>
+        <Burger id="transparent" ingredients={props.ingredients}/>
       </div>
       <div className="flex">
         <Button btnType="Danger" clicked={props.checkoutCancelled}>CANCEL</Button>

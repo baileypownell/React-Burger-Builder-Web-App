@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+#transparent {
+  background-color: transparent;
+}
+
 @media (min-width: 600px) {
   /* .CheckoutSummary {
     width: 200px;

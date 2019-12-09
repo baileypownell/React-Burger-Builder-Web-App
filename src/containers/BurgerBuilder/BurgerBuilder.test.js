@@ -14,7 +14,7 @@ describe('<burgerBuilder />', () => {
   });
 
   it('should render <BuildControls /> when receiving ingredients', () => {
-    wrapper.setProps({ings: {salad: 0}});
+    wrapper.setProps({ings: {Lettuce: 0}});
     expect(wrapper.find(BuildControls)).toHaveLength(1);
   });
 });

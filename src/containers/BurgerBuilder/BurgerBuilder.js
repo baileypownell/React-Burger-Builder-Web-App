@@ -71,7 +71,7 @@ export class BurgerBuilder extends Component {
             purchaseCancelled={this.purchaseCancelHandler}
             purchaseContinued={this.purchaseContinueHandler} />;
     }
-    // {salad: true, meat: false, ...}
+    // {Lettuce: true, meat: false, ...}
     return (
         <div>
             <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>

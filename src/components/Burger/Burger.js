@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './Burger.css';
 import BurgerIngredients from './BurgerIngredients/BurgerIngredients'
-import BuildControls from './BuildControls/BuildControls'
+
 
 const Burger = (props) => {
   let transformedIngredients = Object.keys(props.ingredients).map((igKey) => {
@@ -16,11 +16,11 @@ const Burger = (props) => {
     transformedIngredients = <h2>Your cravings here</h2>
   };
   return(
-    <div className="Burger">
+    <div className="Burger" id={window.location.href.includes('checkout') ? "transparent" : null}>
       <BurgerIngredients type="bread-top"/>
       {transformedIngredients}
       <BurgerIngredients type="bread-bottom"/>
-        
+
     </div>
   );
 }

@@ -97,7 +97,7 @@
     border-radius: 20px;
 }
 
-.Salad {
+.Lettuce {
     width: 60%;
     height: 3%;
     margin: 1% auto;
@@ -113,7 +113,7 @@
 }
 
 @media screen and (min-width: 900px) {
-  .BreadTop, .BreadBottom, .Salad, .Bacon, .Meat, .Cheese {
+  .BreadTop, .BreadBottom, .Lettuce, .Bacon, .Meat, .Cheese {
     width: 35%;
   }
 }
